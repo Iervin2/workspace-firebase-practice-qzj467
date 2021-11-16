@@ -1,20 +1,21 @@
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Jquery library   ---->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<!-- Jquery library   ---->
-	<script src="https://code.jquery.com/jquery-3.5.1.js"
-		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-	</script>
-</head>
-
-<body>
-	<div class="message">
-		<h1>Join AikenConnect today!</h1>
-		<form id="signup-form">
-			<p>Full Name</p>
-			<p>
-				<input
+  <body>
+    <div class="message">
+      <h1>Join AikenConnect today!</h1>
+      <form id="signup-form">
+        <p>Full Name</p>
+        <p>
+          <input
             type="text"
             autocomplete="off"
             value=""
@@ -24,9 +25,10 @@
           />
         </p>
 
-				<p>User name(Email address)</p>
-				<p>
-					<input
+        <p>User name(Email address)</p>
+        <p>
+          <input
+            id="email"
             type="text"
             autocomplete="off"
             value=""
@@ -35,10 +37,11 @@
             required
           />
         </p>
-					<span id="message1"></span>
-					<p>Create your password</p>
-					<p>
-						<input
+        <span id="message1"></span>
+        <p>Create your password</p>
+        <p>
+          <input
+            id="password"
             type="password"
             autocomplete="off"
             value=""
@@ -47,9 +50,9 @@
             required
           />
         </p>
-						<p>Confirm your password</p>
-						<p>
-							<input
+        <p>Confirm your password</p>
+        <p>
+          <input
             type="password"
             autocomplete="off"
             value=""
@@ -58,29 +61,24 @@
             required
           />
         </p>
-							<span id="message2"></span>
-							<p><input type="submit" value="Create Your Account" /></p>
-		</form>
-	</div>
+        <span id="message2"></span>
+        <p><input type="submit" value="Create Your Account" /></p>
 
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+        <p><input type="button" id="google" value="Skip--Use Google" /></p>
+      </form>
+    </div>
 
-	<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
 
+    <!--  Save and display data on real time  -->
 
-
-
-	<!--  Save and display data on real time  -->
-
-	<script src="js/Signup.js"></script>
-
-
-
-</body>
-
+    <script src="js/Signup.js"></script>
+  </body>
 </html>
